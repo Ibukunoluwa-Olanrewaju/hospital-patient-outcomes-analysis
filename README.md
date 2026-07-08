@@ -21,7 +21,7 @@
 3. [Project Scope & Tools](#3-project-scope--tools)
 4. [Repository Structure](#4-repository-structure)
 5. [Data Workflow](#5-data-workflow)
-6. [Data Model & Schema](#6-data-model--schema) 
+6. [Data Model & Schema](#6-data-model--schema)
 7. [ERD - Entity Relationship Diagram](#7-erd---entity-relationship-diagram)
 8. [Analysis & Metrics](#8-analysis--metrics)
 9. [Key Insights](#9-key-insights)
@@ -29,7 +29,6 @@
 11. [Limitations](#11-limitations)
 12. [Deliverables](#12-deliverables)
 13. [Author](#13-author)
-
 ---
 
 ## 1. Project Overview
@@ -221,141 +220,70 @@ Key performance metrics, including mortality rates, DAMA rates, disease prevalen
 ## 9. Key Insights
 
 ## Key Insights
-## Key Insights
 
+### Insight 1: Socioeconomic barriers may be contributing to poorer patient outcomes.
 
-
-### Insight 1: Socioeconomic vulnerability is associated with poorer clinical outcomes.
-
-Mortality and discharge against medical advice (DAMA) were both concentrated among patients in the **Basic occupation** category, particularly within the Adult (25–44), Middle-Aged (45–64), and Senior (65–79) groups. This pattern suggests that socioeconomic vulnerability may adversely influence treatment adherence, continuity of care, and overall clinical outcomes, highlighting the need for targeted support for high-risk patient populations.
+Mortality and discharge against medical advice (DAMA) were both concentrated among patients in the **Basic occupation** category, particularly within the Adult (25–44), Middle-Aged (45–64), and Senior (65–79) age groups. This suggests that socioeconomic barriers may be limiting access to continuous care and successful treatment completion, highlighting the need for targeted support for financially vulnerable patient populations.
 
 ---
 
-### Insight 2: Financial barriers are the predominant driver of treatment discontinuation.
+### Insight 2: Financial hardship is the primary factor driving treatment discontinuation.
 
-Financial reasons accounted for **87.68%** of all DAMA cases, with financial constraint and financial incapability responsible for 242 of the 275 recorded instances. This indicates that affordability, rather than clinical recovery, is the principal reason patients discontinue inpatient care, emphasizing the importance of financial counselling and patient support services.
-
----
-
-### Insight 3: Disease prevalence does not necessarily correspond to the greatest mortality burden.
-
-Stroke and Chronic Kidney Disease (CKD) were the most prevalent chronic illnesses, yet Diabetes recorded the highest mortality rate (**30.72%**). This demonstrates that the conditions placing the greatest burden on hospital resources are not always those associated with the poorest clinical outcomes, reinforcing the need to prioritize both disease prevalence and mortality risk in clinical resource planning.
+Financial-related reasons accounted for **87.68%** of all recorded DAMA cases, representing **242 of the 275** patients discharged against medical advice. This indicates that financial constraints, rather than clinical recovery, are the principal barrier to treatment completion, suggesting that improving financial support services could substantially reduce avoidable DAMA cases.
 
 ---
 
-### Insight 4: Medication-related exposure may represent an under-recognized contributor to adverse patient outcomes.
+### Insight 3: Disease prevalence alone may not be sufficient for prioritizing clinical resources.
 
-NSAID use involved the largest patient population and recorded the highest mortality rate (**16.35%**) among the lifestyle factors analyzed. This finding suggests that medication-related risk factors warrant closer clinical surveillance, particularly among patients with chronic diseases who may already be at elevated risk of adverse outcomes.
+Stroke (23.48%) and Chronic Kidney Disease (21.92%) were the most prevalent chronic illnesses, yet **Diabetes recorded the highest mortality rate (30.72%)**. This suggests that allocating clinical resources based solely on disease prevalence may overlook conditions with the greatest mortality burden. Resource planning should therefore consider both disease frequency and outcome severity to better target high-risk patient populations.
 
 ---
 
-### Insight 5: Mortality patterns indicate potential operational pressure within high-burden clinical specialties.
+### Insight 4: Medication-related risk factors may warrant closer clinical surveillance.
 
-Emergency Medicine, Cardiology, and Nephrology demonstrated a combination of high clinical workload and elevated mortality, while General Surgery recorded exceptionally high mortality despite lower patient volume. These findings suggest that workload distribution, case complexity, and clinical care processes should be further evaluated to optimize patient outcomes and service delivery.
+NSAID use recorded the highest mortality rate (**16.35%**) among the lifestyle factors examined and affected the largest patient population. This suggests that medication-related exposures contribute meaningfully to adverse patient outcomes and should be considered when identifying patients who require closer monitoring and preventive interventions.
+
+---
+
+### Insight 5: Mortality patterns indicate the need to evaluate clinical workload and service delivery.
+
+Emergency Medicine, Cardiology, and Nephrology demonstrated both high patient workloads and elevated mortality, while General Surgery recorded exceptionally high mortality despite a relatively lower patient volume. These findings suggest that differences in workload distribution, case complexity, or clinical care processes may be influencing patient outcomes and should be investigated through targeted clinical and operational audits.
 
 ## 10. Recommendations
 
-<!--
-  Action-oriented. Addressed to a real audience.
-  Tied explicitly to the insight that supports each one.
-
-  WHAT GOOD LOOKS LIKE:
-  Priority: High
-  Recommendation: "Conduct a fulfilment audit for home goods deliveries
-                   in Region A - specifically investigating whether returns
-                   correlate with a particular warehouse, carrier, or SKU batch."
-  Based On: Insight 1 - return rate anomaly in Region A
-  Owner: Operations / Supply Chain team
-
-  WHAT TO AVOID:
-  ❌ "Improve the return rate."
-     (Not actionable. Doesn't say who, how, or where to start.)
-  ❌ "Further analysis is needed."
-     (This is a placeholder, not a recommendation.)
--->
-
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Medium | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
+| **High** | Establish structured financial counselling, flexible payment plans, and medical social support for patients identified as being at high risk of discharge against medical advice (DAMA). | **Insight 2:** Financial hardship is the primary factor driving treatment discontinuation. | Hospital Management, Finance Department, Medical Social Services |
+| **High** | Prioritize clinical resources, medication availability, and routine monitoring for Diabetes, Chronic Kidney Disease (CKD), and Stroke to reduce preventable mortality among high-risk patients. | **Insight 3:** Disease prevalence alone may not be sufficient for prioritizing clinical resources. | Clinical Leadership, Internal Medicine, Pharmacy Department |
+| **Medium** | Introduce targeted patient education and medication review for patients with chronic NSAID use to reduce medication-related risks and improve clinical surveillance. | **Insight 4:** Medication-related risk factors may warrant closer clinical surveillance. | Clinical Governance Team, Pharmacy Department |
+| **Medium** | Conduct operational and clinical audits within Emergency Medicine, Cardiology, General Surgery, and Nephrology to evaluate workload distribution, case complexity, and potential process inefficiencies affecting patient outcomes. | **Insight 5:** Mortality patterns indicate the need to evaluate clinical workload and service delivery. | Hospital Operations, Clinical Leadership, Quality Improvement Team |
+| **Medium** | Develop targeted patient support programs for socioeconomically vulnerable populations through early identification, discharge planning, and community support initiatives to improve treatment adherence and continuity of care. | **Insight 1:** Socioeconomic barriers may be contributing to poorer patient outcomes. | Hospital Management, Care Coordination Team, Medical Social Services |
 
----
+## 11. Limitations
 
-## 11. Assumptions & Limitations
+- A significant proportion of records in the **Education** field were missing, limiting the ability to evaluate how educational attainment may influence patient outcomes, treatment adherence, or discharge against medical advice (DAMA).
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  Assumption: "Transaction records were assumed to be complete for all five regions.
-               No validation was performed against source system record counts."
-  Limitation: "The analysis cannot distinguish between returns initiated by
-               the customer vs. returns initiated by the business (e.g., recalls).
-               If business-initiated returns are concentrated in Region A, the
-               return rate finding may reflect a policy decision, not a quality issue."
+- The absence of complete educational data means that any relationship between patient education and hospital outcomes could not be reliably assessed. A more comprehensive dataset would enable demographic risk stratification that includes educational status alongside age, occupation, and lifestyle factors.
 
-  WHAT TO AVOID:
-  ❌ Leaving this section blank or writing "None known."
-     Every project has limitations. Documenting them is a sign of
-     analytical maturity - not a confession of failure.
--->
-
-### Assumptions
-- [What did you treat as true without being able to verify?]
-- [What simplifications did you make for scope or feasibility?]
-- [What domain rules or definitions did you accept as given?]
-
-### Limitations
-- [What gaps exist in the data?]
-- [What analysis was out of scope but could affect interpretation?]
-- [What would a more rigorous version of this project include?]
-- [Are there known biases in the data source or collection method?]
-
-> *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
-
----
-
-## 12. Future Enhancements
-
-<!--
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Automate the monthly data pull from the POS export folder using
-      a scheduled Python script, replacing the current manual process."
-  ✅ "Expand the return rate analysis to include carrier-level data,
-      which was unavailable in this dataset but exists in the logistics system."
-
-  WHAT TO AVOID:
-  ❌ "Add a machine learning model."
-     (Vague, and disconnected from the actual findings of this project.)
-  ❌ Listing aspirational features that don't follow logically from the work.
--->
-
-- [ ] [Enhancement 1 - specific and traceable to a real gap in this project]
-- [ ] [Enhancement 2]
-- [ ] [Enhancement 3]
-- [ ] [Enhancement 4]
-
----
-
-## 13. Deliverables
+## 12. Deliverables
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-
+| **Project Documentation** | Complete project documentation, methodology, findings, recommendations, and supporting materials. | [`README.md`](README.md) |
+| **Dataset** | Access to the datasets used in the analysis (see the `data` folder for dataset links and documentation). | [`data/`](data/) |
+| **SQL Queries** | SQL scripts used for data transformation, and analytical queries. | [`queries/`](queries/) |
+| **Tableau Dashboard** | Interactive dashboard visualizing hospital outcomes, DAMA, chronic disease burden, and physician performance. | [`dashboard/`](dashboard/) |
+| **Project Report** | Executive report summarizing key findings, recommendations, and business implications. | [`reports/`](reports/) |
+| **Project Visuals** | Entity Relationship Diagram (ERD) and dashboard screenshots used throughout the project. | [`visuals/`](visuals/) |
+| **Supporting Documentation** | Data dictionary, documentation, and supplementary project notes. | [`docs/`](docs/) |
 ---
 
-## 14. Author
+## 13. Author
 
-**[Your Name]**
-[Your role or title - current or target]
+## About the Author
 
-- 🔗 [LinkedIn URL]
-- 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+**Ibukunoluwa Olanrewaju**  
+Healthcare Data Analyst
 
----
-
-*Last updated: [Month YYYY]*
-*If this template helped you, consider starring the repository.*
+- 🔗 LinkedIn: [Ibukunoluwa Olanrewaju](https://www.linkedin.com/in/ibukunoluwa-olanrewaju)
+- 📧 Email: ibukunolanrewaju01@gmail.com
