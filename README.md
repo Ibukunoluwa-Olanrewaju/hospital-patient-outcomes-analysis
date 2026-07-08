@@ -141,7 +141,7 @@ Analytical SQL Queries
 Tableau Dashboards & Project Report
 ```
 
-1. **Source:** The project used four relational datasets provided as CSV files: **Patient Details**, **Admission Details**, **Doctors**, and **Risk Factors**, containing demographic, clinical, physician, and lifestyle information.
+1. **Source:** The analysis is based on a multi-table dataset representing real-world patient, clinical, physician, and lifestyle information from a specialist hospital. To protect patient confidentiality and institutional privacy, the hospital's identity has been anonymized. The dataset was provided as four relational CSV tables: **Patient Details**, **Admission Details**, **Doctors**, and **Risk Factors**, forming the relational database used throughout this project.
 
 2. **Ingestion:** The datasets were prepared in Microsoft Excel by correcting data types, standardizing date fields, and resolving formatting issues before being imported into PostgreSQL using the pgAdmin Import Tool.
 
