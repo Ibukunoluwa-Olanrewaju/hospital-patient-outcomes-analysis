@@ -168,7 +168,7 @@ Tableau Dashboards & Project Report
 
 ## 7. ERD - Entity Relationship Diagram
 
-![Entity Relationship Diagram](visuals/erd.png)
+![Entity Relationship Diagram](visuals/DAMA%20ERD.png)
 
 *Entity Relationship Diagram (ERD) illustrating the relational database schema. The analysis integrates patient demographics, admission records, physician information, and lifestyle risk factors through primary and foreign key relationships.*
 
@@ -188,79 +188,70 @@ Tableau Dashboards & Project Report
 
 ## 8. Analysis & Metrics
 
-<!--
-  Explain what you measured and how - before you share what you found.
-
-  WHAT GOOD LOOKS LIKE:
-  Metric: "Customer Return Rate"
-  Definition: "Number of transactions flagged as returns divided by total
-               transactions, calculated at product-category and regional grain."
-  Why It Matters: "Return rate - not sales volume - was hypothesised to
-                  explain regional revenue gaps. This metric tests that hypothesis."
-
-  WHAT TO AVOID:
-  ❌ Defining a metric only in code: SUM(returns) / COUNT(transaction_id)
-     That's an implementation. Write the plain-language definition here.
-     Both belong in your project - the definition in the README,
-     the implementation in the code.
--->
+### Analytical Approach
 
 ### Analytical Approach
 
-[Describe how you approached the analysis. Were you exploring patterns? Testing a hypothesis? Building and validating a pipeline? Be honest about your method - exploratory work is valid, just call it that.]
+This project followed an exploratory and descriptive analytical approach to investigate the patient, clinical, and operational factors associated with hospital outcomes.
+
+SQL was used to integrate patient demographics, admission records, physician information, and lifestyle risk factors into a relational dataset, enabling comparisons across patient groups, chronic disease prevalence, discharge against medical advice (DAMA), mortality, and physician workload.
+
+Key performance metrics, including mortality rates, DAMA rates, disease prevalence, and physician workload, were calculated and analyzed across relevant demographic and clinical dimensions. The resulting insights were translated into operational and clinical recommendations to support evidence-based decision-making and improve hospital performance.
 
 ### Key Metrics Defined
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `[Metric 1]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 2]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 3]` | [What it measures, in one sentence] | [What decision or question it answers] |
+| **Mortality Rate** | The percentage of patients who died within a defined patient group, diagnosis, or clinical specialty. | Identifies high-risk patient groups and clinical areas requiring targeted intervention. |
+| **DAMA Rate** | The percentage of patients discharged against medical advice within a defined patient group or category. | Helps identify populations at greater risk of incomplete treatment and barriers to continuity of care. |
+| **Disease Prevalence Rate** | The proportion of patients diagnosed with a specific chronic disease within the study population. | Measures disease burden and supports resource planning and preventive healthcare initiatives. |
+| **Patient Volume** | The total number of patients within a demographic group, diagnosis, or physician's workload. | Provides context for interpreting mortality, disease burden, and physician workload, ensuring findings are assessed alongside the number of patients affected. |
 
 ### Methods Used
 
-- [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
-- [e.g., Trend analysis across [time period]]
-- [e.g., Segmentation / group comparison by [dimension]]
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
+- **Descriptive Statistics:** Summarized patient demographics, hospital outcomes, and chronic disease burden using counts, percentages, and rates.
+- **Group Comparison:** Compared mortality and discharge against medical advice (DAMA) across age groups, occupations, chronic diseases, lifestyle factors, physician specialties, and individual doctors.
+- **Relational Data Analysis:** Integrated patient, admission, physician, and risk factor data using SQL joins to enable cross-table analysis.
+- **SQL Views & Common Table Expressions (CTEs):** Created reusable SQL views and CTEs to organize analytical logic and support downstream reporting.
+- **Conditional Aggregation:** Used SQL aggregate functions with conditional logic to calculate mortality rates, DAMA rates, disease prevalence, and physician workload metrics.
+- **Data Visualization:** Presented key findings through Tableau dashboards to communicate operational and clinical insights.
 
 ---
 
 ## 9. Key Insights
 
-<!--
-  Findings + implications. Not just what happened - what it means.
+## Key Insights
+## Key Insights
 
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Return rates, not sales volume, explain Region A's underperformance.
-      Region A's return rate on home goods was 34% - more than double the
-      company average. Revenue was not lost at the point of sale; it was
-      lost post-sale through refunds. This points to a fulfilment or
-      product quality issue specific to that region, not a demand problem."
 
-  WHAT TO AVOID:
-  ❌ "Region A had lower revenue than other regions in Q4."
-     (That's an observation. It describes what happened.
-      An insight says what it means and where to look next.)
 
-  Aim for 3–6 insights. Quality over quantity.
--->
+### Insight 1: Socioeconomic vulnerability is associated with poorer clinical outcomes.
 
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
-
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
-
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
-
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
+Mortality and discharge against medical advice (DAMA) were both concentrated among patients in the **Basic occupation** category, particularly within the Adult (25–44), Middle-Aged (45–64), and Senior (65–79) groups. This pattern suggests that socioeconomic vulnerability may adversely influence treatment adherence, continuity of care, and overall clinical outcomes, highlighting the need for targeted support for high-risk patient populations.
 
 ---
+
+### Insight 2: Financial barriers are the predominant driver of treatment discontinuation.
+
+Financial reasons accounted for **87.68%** of all DAMA cases, with financial constraint and financial incapability responsible for 242 of the 275 recorded instances. This indicates that affordability, rather than clinical recovery, is the principal reason patients discontinue inpatient care, emphasizing the importance of financial counselling and patient support services.
+
+---
+
+### Insight 3: Disease prevalence does not necessarily correspond to the greatest mortality burden.
+
+Stroke and Chronic Kidney Disease (CKD) were the most prevalent chronic illnesses, yet Diabetes recorded the highest mortality rate (**30.72%**). This demonstrates that the conditions placing the greatest burden on hospital resources are not always those associated with the poorest clinical outcomes, reinforcing the need to prioritize both disease prevalence and mortality risk in clinical resource planning.
+
+---
+
+### Insight 4: Medication-related exposure may represent an under-recognized contributor to adverse patient outcomes.
+
+NSAID use involved the largest patient population and recorded the highest mortality rate (**16.35%**) among the lifestyle factors analyzed. This finding suggests that medication-related risk factors warrant closer clinical surveillance, particularly among patients with chronic diseases who may already be at elevated risk of adverse outcomes.
+
+---
+
+### Insight 5: Mortality patterns indicate potential operational pressure within high-burden clinical specialties.
+
+Emergency Medicine, Cardiology, and Nephrology demonstrated a combination of high clinical workload and elevated mortality, while General Surgery recorded exceptionally high mortality despite lower patient volume. These findings suggest that workload distribution, case complexity, and clinical care processes should be further evaluated to optimize patient outcomes and service delivery.
 
 ## 10. Recommendations
 
