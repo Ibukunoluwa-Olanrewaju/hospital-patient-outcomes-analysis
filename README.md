@@ -11,7 +11,6 @@
 - [x] Data Cleaning / Wrangling
 - [x] Exploratory Data Analysis (EDA)
 - [x] SQL Analysis / Querying
-- [x] Dashboard / Data Visualization
 
 ---
 
@@ -118,8 +117,6 @@ hospital-patient-outcomes-analysis/
 │
 ├── reports/
 │
-├── visuals/
-│
 ├── docs/
 │
 └── README.md
@@ -138,7 +135,7 @@ Table Integration & SQL Views
         ↓
 Analytical SQL Queries
         ↓
-Tableau Dashboards & Project Report
+ Project Report
 ```
 
 1. **Source:** The analysis is based on a multi-table dataset representing real-world patient, clinical, physician, and lifestyle information from a specialist hospital. To protect patient confidentiality and institutional privacy, the hospital's identity has been anonymized. The dataset was provided as four relational CSV tables: **Patient Details**, **Admission Details**, **Doctors**, and **Risk Factors**, forming the relational database used throughout this project.
@@ -213,7 +210,7 @@ Key performance metrics, including mortality rates, DAMA rates, disease prevalen
 - **Relational Data Analysis:** Integrated patient, admission, physician, and risk factor data using SQL joins to enable cross-table analysis.
 - **SQL Views & Common Table Expressions (CTEs):** Created reusable SQL views and CTEs to organize analytical logic and support downstream reporting.
 - **Conditional Aggregation:** Used SQL aggregate functions with conditional logic to calculate mortality rates, DAMA rates, disease prevalence, and physician workload metrics.
-- **Data Visualization:** Presented key findings through Tableau dashboards to communicate operational and clinical insights.
+- **Data Reporting:** Presented key findings through PowerPoint reports to communicate operational and clinical insights.
 
 ---
 
