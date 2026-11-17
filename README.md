@@ -269,7 +269,6 @@ Emergency Medicine, Cardiology, and Nephrology demonstrated both high patient wo
 | **Project Documentation** | Complete project documentation, methodology, findings, recommendations, and supporting materials. | [`README.md`](README.md) |
 | **Dataset** | Access to the datasets used in the analysis (see the `data` folder for dataset links and documentation). | [`data/`](data/) |
 | **SQL Queries** | SQL scripts used for data transformation, and analytical queries. | [`queries/`](queries/) |
-| **Tableau Dashboard** | Interactive dashboard visualizing hospital outcomes, DAMA, chronic disease burden, and physician performance. | [`dashboard/`](dashboard/) |
 | **Project Report** | Executive report summarizing key findings, recommendations, and business implications. | [`reports/`](reports/) |
 | **Project Visuals** | Entity Relationship Diagram (ERD) and dashboard screenshots used throughout the project. | [`visuals/`](visuals/) |
 | **Supporting Documentation** | Data dictionary, documentation, and supplementary project notes. | [`docs/`](docs/) |
